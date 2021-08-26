@@ -13,13 +13,11 @@ public class InputManager
 
     public void OnUpdate()
     {
-
         if (EventSystem.current.IsPointerOverGameObject())
-        {
             return;
-        }
+
         if (Input.anyKey && KeyAction != null)
-            KeyAction.Invoke();
+				KeyAction.Invoke();
 
         if (MouseAction != null)
         {
